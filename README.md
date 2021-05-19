@@ -1,4 +1,4 @@
-Managing Cloud-Native Data on Kubernetes - Book Outline
+# Managing Cloud-Native Data on Kubernetes - Book Outline
 
 Thanks for looking at the outline and topics for our upcoming book with O'Reilly Media. 
 We'd love to get feedback from the community on the topics you'd find useful in a book about data on Kubernetes. 
