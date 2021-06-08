@@ -18,10 +18,15 @@ Takeaway: running databases on Kubernetes has historically been a challenge beca
 Takeaway: While Kubernetes was originally designed on stateless workloads, it’s extensibility has made it possible to make data a first class citizen
 
 *   Kubernetes primitives for stateful data
-    *   Stateful sets / replica sets
-    *   Persistent volumes / persistent volume claims
+    *   Volumes
+    *   Persistent volumes
+    *   Persistent volume claims
+    *   Storage classes
+    *   Deployments and replica sets
+    *   Stateful sets
 *   Kubernetes storage
     *   Container Storage Interface (CSI) 
+    *   Container Attached Storage
     *   OpenEBS
     *   Replication: Storage-based vs. database-managed 
 
