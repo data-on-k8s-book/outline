@@ -50,8 +50,8 @@ Takeaway: The operator pattern provides the critical breakthrough that enables u
 Takeaway: Messaging and streaming technologies are an important complementary technology to databases on Kubernetes for moving data
 
 *   Defining Cloud Native Streaming
-*   Case Study: Kafka
 *   Case Study: Pulsar
+*   Case Study: Flink
 
 ## Chapter 6: Integrating Data Infrastructure in a Kubernetes Stack
 Takeaway: Databases and data services must provide interfaces for management, monitoring, and security that allow them to be managed as part of an integrated stack. 
@@ -72,6 +72,8 @@ Takeaway: Analytic workloads create an interesting hybrid of stateful and statel
 *   Building analytics pipelines on Kubernetes
     *   Case study: Apache Spark
     *   Using service mesh to enable secure access for Spark workers
+*  Machine Learning and AI
+    *   Case study: MLflow
 
 ## Chapter 8: Data APIs on Kubernetes
 Takeaway: The key to developer productivity on Kubernetes is to stop thinking about database query languages and start coding to data APIs
