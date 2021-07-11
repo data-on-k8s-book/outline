@@ -111,7 +111,7 @@ Takeaway: In the past, we’ve lived primarily in a world of “app-driven data�
     *   From relational to non relational
 *   Analytics
 *   AI/ML
-    *   ML model lifecycle
+    *   Kubeflow - ML model lifecycle
     *   AI Ops
 *   Data Mesh 
     *   How cloud native data infrastructure enables data mesh
