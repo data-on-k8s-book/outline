@@ -6,16 +6,18 @@ Please submit an issue or PR on this repo with any suggestions you'd like to mak
 
 
 ## Chapter 1: Introduction to cloud-native data infrastructure: persistence, streaming, and analytics
-Takeaway: running databases on Kubernetes has historically been a challenge because it was originally designed for stateless workloads, but this is changing.
+Takeaway: we've come a long way in defining what cloud-native means for stateless applications, but it's time to establish a vision for cloud-native data infrastructure and stateful applicaitons that can help us leverage the power of Kubernetes for the next generation of technology.
 
-*   Current landscape
+*   Stateless vs. stateful services
+*   What is Cloud Native Data?
+*   Where We're Going: a story about a possible near future with cloud native data infrastructure
+*   Where we are today
 *   Cloud commodities: compute, networking, storage… and data?
 *   The three ingredients of cloud data infrastructure: persistence, streaming, and analytics
 *   Overview of desired characteristics: scalability, elasticity, availability, observability, predictable cost
-*   Roadmap for the book
 
-## Chapter 2: Managing Stateful Data on Kubernetes
-Takeaway: While Kubernetes was originally designed on stateless workloads, it’s extensibility has made it possible to make data a first class citizen
+## Chapter 2: Managing Data Storage on Kubernetes
+Takeaway: Kubernetes provides the storage primitives that establish a foundation for building cloud-native stateful applications.
 
 *   Kubernetes primitives for stateful data
     *   Volumes
