@@ -45,7 +45,8 @@ Takeaway: The operator pattern provides the critical breakthrough that enables u
 
 *   Extending Kubernetes with custom resources
 *   The Operator pattern
-*   NoSQL Case Study: Cass-operator
+*   Using Helm to bring it together
+*   NoSQL Case Study: Cass-operator & Medusa
 *   Relational Case Study: Vitess
 
 ## Chapter 5: Streaming Data on Kubernetes
@@ -53,6 +54,7 @@ Takeaway: Messaging and streaming technologies are an important complementary te
 
 *   Defining Cloud Native Streaming
 *   Case Study: Pulsar
+*   Using service discovery in streaming
 *   Case Study: Flink
 
 ## Chapter 6: Integrating Data Infrastructure in a Kubernetes Stack
