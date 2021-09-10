@@ -19,22 +19,23 @@ Takeaway: we've come a long way in defining what cloud-native means for stateles
 ## Chapter 2: Managing Data Storage on Kubernetes
 Takeaway: Kubernetes provides the storage primitives that establish a foundation for building cloud-native stateful applications.
 
-*   Kubernetes primitives for stateful data
+*   Background: Container Storage in Docker
+*   Kubernetes primitives for data storage
     *   Volumes
     *   Persistent volumes
     *   Persistent volume claims
     *   Storage classes
-    *   Deployments and replica sets
-    *   Stateful sets
-*   Kubernetes storage
+*   Kubernetes storage extensions
     *   Container Storage Interface (CSI) 
-    *   Container Attached Storage
-    *   OpenEBS
-    *   Replication: Storage-based vs. database-managed 
+    *   Container Attached Storage (i.e. OpenEBS)
+    *   Container Object Storage Interface (COSI)
 
 ## Chapter 3: Running Databases on Kubernetes (the hard way)
 Takeaway: running a database yourself on K8s is simple at the scale of a single node, but gets harder as you try to scale up and maintain high availability.
 
+*  Kubernetes primitives for managing workloads
+    *   Deployments and replica sets
+    *   Stateful sets
 *   Deploying a single-node database
     *   Relational example: MySQL
 *   Deploying a distributed database
