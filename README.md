@@ -10,8 +10,6 @@ Takeaway: we've come a long way in defining what cloud-native means for stateles
 
 *   Stateless vs. stateful services
 *   What is Cloud Native Data?
-*   Where We're Going: a story about a possible near future with cloud native data infrastructure
-*   Where we are today
 *   Cloud commodities: compute, networking, storage… and data?
 *   The three ingredients of cloud data infrastructure: persistence, streaming, and analytics
 *   Overview of desired characteristics: scalability, elasticity, availability, observability, predictable cost
@@ -33,7 +31,7 @@ Takeaway: Kubernetes provides the storage primitives that establish a foundation
 ## Chapter 3: Running Databases on Kubernetes (the hard way)
 Takeaway: running a database yourself on K8s is simple at the scale of a single node, but gets harder as you try to scale up and maintain high availability.
 
-*  Kubernetes primitives for managing workloads
+*  Kubernetes primitives for managing stateful workloads
     *   Deployments and replica sets
     *   Stateful sets
 *   Deploying a single-node database
@@ -41,16 +39,25 @@ Takeaway: running a database yourself on K8s is simple at the scale of a single 
 *   Deploying a distributed database
     *   NoSQL example: Cassandra
 
-## Chapter 4: Automating Database Operations on Kubernetes
+## Chapter 4: Automating Database Deployment on Kubernetes with Helm
+Takeaway: Deployments of stateful applications on K8s can get complicated pretty quickly. We need tools like Helm to help automate the deployment and update of K8s resources.
+
+*   Helm and other package managers
+*   Using Helm to deploy MySQL
+    *   Additional K8s resources: Secrets, ConfigMaps, ServiceAccounts
+*   Using Helm to deploy Apache Cassandra
+    *   Affinity and anti-affinity
+*   Limitations of Helm for application operations
+
+## Chapter 5: Automating Database Management on Kubernetes with Operators
 Takeaway: The operator pattern provides the critical breakthrough that enables us to simplify database operations in Kubernetes through automation
 
 *   Extending Kubernetes with custom resources
 *   The Operator pattern
-*   Using Helm to bring it together
 *   NoSQL Case Study: Cass-operator & Medusa
 *   Relational Case Study: Vitess
 
-## Chapter 5: Streaming Data on Kubernetes
+## Chapter 6: Streaming Data on Kubernetes
 Takeaway: Messaging and streaming technologies are an important complementary technology to databases on Kubernetes for moving data
 
 *   Defining Cloud Native Streaming
@@ -58,7 +65,7 @@ Takeaway: Messaging and streaming technologies are an important complementary te
 *   Using service discovery in streaming
 *   Case Study: Flink
 
-## Chapter 6: Integrating Data Infrastructure in a Kubernetes Stack
+## Chapter 7: Integrating Data Infrastructure in a Kubernetes Stack
 Takeaway: Databases and data services must provide interfaces for management, monitoring, and security that allow them to be managed as part of an integrated stack. 
 
 *   Data Infrastructure and Site Reliability Engineering
@@ -68,7 +75,7 @@ Takeaway: Databases and data services must provide interfaces for management, mo
 *   Cost management (long running resources, data movement)
 *   Case study: K8ssandra
 
-## Chapter 7: Data Analytics on Kubernetes
+## Chapter 8: Data Analytics on Kubernetes
 Takeaway: Analytic workloads create an interesting hybrid of stateful and stateless workloads to create an elastic data analysis platform with efficient resource utilization. 
 
 *   Mapping Analytics Workloads to Kubernetes
@@ -80,18 +87,13 @@ Takeaway: Analytic workloads create an interesting hybrid of stateful and statel
 *  Machine Learning and AI
     *   Case study: MLflow
 
-## Chapter 8: Data APIs on Kubernetes
+## Chapter 9: Interacting with Data in Kubernetes Applications
 Takeaway: The key to developer productivity on Kubernetes is to stop thinking about database query languages and start coding to data APIs
 
-*   Case studies:companies who have built APIs on top of persistence
-*   Required qualities of a data service
-*   Data APIs
-    *   Case study: Stargate
-*   Data as a Service
-
-## Chapter 9: Interacting with Data in Kubernetes Applications
 *   Data and Microservice Design Patterns
-*   Connecting Microservices to Data
+    *   Data Gateway
+    *   Case study: Stargate
+    *   Data as a Service
     *   Open Service Broker API
 *   Data topologies on K8s
     *   Multi data center
