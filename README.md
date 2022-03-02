@@ -57,7 +57,30 @@ Takeaway: The operator pattern provides the critical breakthrough that enables u
 *   NoSQL Case Study: Cass-operator & Medusa
 *   Relational Case Study: Vitess
 
-## Chapter 6: Streaming Data on Kubernetes
+## Chapter 6: Integrating Data Infrastructure in a Kubernetes Stack
+Takeaway: Databases and data services must provide interfaces for management, monitoring, and security that allow them to be managed as part of an integrated stack. 
+
+*   Considerations in developing integrated stacks
+    *   High Availability
+    *   Observability (Metrics, Logging, Tracing)
+    *   Security (Identity management, Access control, Shared secrets)
+    *   Cost management (long running resources, data movement)
+*   Case study: K8ssandra
+    *   Deployment
+    *   Monitoring 
+    *   Maintenance
+    *   Multi-cluster/multi-datacenter operations
+*   The Data Gateway pattern - Data as a Service
+    *   Case study: Stargate
+
+## Chapter 7: The Cloud Native Database
+*   Takeaway: The emerging generation of databases will be based on new architectures in order to truly maximize the benefits of the cloud.
+*   Separation of compute and storage
+*   Applying Serverless Principles
+*   A Maturity Model for Cloud Native Databases
+*   Case Study: TBD
+   
+## Chapter 8: Streaming Data on Kubernetes
 Takeaway: Messaging and streaming technologies are an important complementary technology to databases on Kubernetes for moving data
 
 *   Defining Cloud Native Streaming
@@ -65,17 +88,7 @@ Takeaway: Messaging and streaming technologies are an important complementary te
 *   Using service discovery in streaming
 *   Case Study: Flink
 
-## Chapter 7: Integrating Data Infrastructure in a Kubernetes Stack
-Takeaway: Databases and data services must provide interfaces for management, monitoring, and security that allow them to be managed as part of an integrated stack. 
-
-*   Data Infrastructure and Site Reliability Engineering
-*   High Availability
-*   Observability (Metrics, Logging, Tracing)
-*   Security (Identity management, Access control, Shared secrets)
-*   Cost management (long running resources, data movement)
-*   Case study: K8ssandra
-
-## Chapter 8: Data Analytics on Kubernetes
+## Chapter 9: Data Analytics on Kubernetes
 Takeaway: Analytic workloads create an interesting hybrid of stateful and stateless workloads to create an elastic data analysis platform with efficient resource utilization. 
 
 *   Mapping Analytics Workloads to Kubernetes
@@ -84,31 +97,8 @@ Takeaway: Analytic workloads create an interesting hybrid of stateful and statel
 *   Building analytics pipelines on Kubernetes
     *   Case study: Apache Spark
     *   Using service mesh to enable secure access for Spark workers
-*  Machine Learning and AI
-    *   Case study: MLflow
 
-## Chapter 9: Interacting with Data in Kubernetes Applications
-Takeaway: The key to developer productivity on Kubernetes is to stop thinking about database query languages and start coding to data APIs
-
-*   Data and Microservice Design Patterns
-    *   Data Gateway
-    *   Case study: Stargate
-    *   Data as a Service
-    *   Open Service Broker API
-*   Data topologies on K8s
-    *   Multi data center
-    *   Multi Cloud
-    *   Multitenancy
-    *   Case study: using a managed service vs. running your own
-
-## Chapter 10: The Cloud Native Database
-*   Takeaway: The emerging generation of databases will be based on new architectures in order to truly maximize the benefits of the cloud.
-*   Separation of compute and storage
-*   Applying Serverless Principles
-*   A Maturity Model for Cloud Native Databases
-*   Case Study: TBD
-
-## Chapter 11: Emerging Use cases for Data on K8s
+## Chapter 10: Emerging Use cases for Data on K8s
 Takeaway: In the past, we’ve lived primarily in a world of “app-driven data”. A cloud native approach and technologies will enable us to transition to “data-driven apps”
 
 *   (Each topic below will include a case study)
@@ -116,17 +106,19 @@ Takeaway: In the past, we’ve lived primarily in a world of “app-driven data�
 *   Migration to data services
     *   From on prem to cloud
     *   From relational to non relational
+    *   implications for data pipelines
 *   Analytics
 *   AI/ML
     *   Kubeflow - ML model lifecycle
     *   AI Ops
 *   Data Mesh 
     *   How cloud native data infrastructure enables data mesh
+*   Declarative data
+    *   Treat data sets as Kubernetes resources and express desired operations and transformations by declaring the desired state
 
-## Chapter 12: DataOps and Declarative Data
-Takeaway: The next great leap forward in data engineering will be the ability to treat data sets as Kubernetes resources and express desired operations and transformations by declaring the desired outcome and allowing your K8s-enabled data stack to do the work.
+## Chapter 11: Putting it all together
+Takeaway: The next great leap forward in data engineering will be the ability to easily compose "virtual data centers" composed of K8s-enabled data infrastructure stacks.
 
-*   The future state of Data pipelines 
-*   Toward a language for declarative data
+*   Principles for building your own stack
 *   The future of DataOps
-*   Case Study: TBD
+
