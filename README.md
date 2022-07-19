@@ -73,12 +73,12 @@ Takeaway: Databases and data services must provide interfaces for management, mo
 *   The Data Gateway pattern - Data as a Service
     *   Case study: Stargate
 
-## Chapter 7: The Cloud Native Database
+## Chapter 7: The Kubernetes Native Database
 *   Takeaway: The emerging generation of databases will be based on new architectures in order to truly maximize the benefits of the cloud.
-*   Separation of compute and storage
-*   Applying Serverless Principles
-*   A Maturity Model for Cloud Native Databases
-*   Case Study: TBD
+*   Why a Kubernetes Native Approach is Needed
+*   Hybrid data access at scale with TiDB
+*   Serverless Cassandra with DataStax AstraDB
+*   What to look for in a Kubernetes Native Database
    
 ## Chapter 8: Streaming Data on Kubernetes
 Takeaway: Messaging and streaming technologies are an important complementary technology to databases on Kubernetes for moving data
@@ -116,9 +116,14 @@ Takeaway: In the past, we’ve lived primarily in a world of “app-driven data�
 *   Declarative data
     *   Treat data sets as Kubernetes resources and express desired operations and transformations by declaring the desired state
 
-## Chapter 11: Putting it all together
-Takeaway: The next great leap forward in data engineering will be the ability to easily compose "virtual data centers" composed of K8s-enabled data infrastructure stacks.
+## Chapter 11: Migrating Data Workloads to Kubernetes
+Takeaway: Let's make a plan to take advantage of everything you've learned in the book.
 
-*   Principles for building your own stack
-*   The future of DataOps
+*   The vision: Application-Aware Platforms
+*   Sidebar with Craig McLuckie
+*   Charting your Path to Success
+    *   People - roles and communities
+    *   Technology - selection criteria, architecture approaches
+    *   Process - prerequisites, migration recommendations
+*   Sidebar - a vision of a cloud native data future
 
